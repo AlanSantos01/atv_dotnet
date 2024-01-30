@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "TechAdv.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TechAdv.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TechAdv.Core.dll": {}
+        }
+      },
+      "TechAdv.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "TechAdv.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TechAdv.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TechAdv.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TechAdv.Core/1.0.0": {
+      "type": "project",
+      "path": "../TechAdv.Core/TechAdv.Core.csproj",
+      "msbuildProject": "../TechAdv.Core/TechAdv.Core.csproj"
+    },
+    "TechAdv.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TechAdv.Infrastructure/TechAdv.Infrastructure.csproj",
+      "msbuildProject": "../TechAdv.Infrastructure/TechAdv.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "TechAdv.Core >= 1.0.0",
+      "TechAdv.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/alan-carlos-pereira/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/alan-carlos-pereira/Documentos/aulaDotNet/atvAula/TechAdv.Application/TechAdv.Application.csproj",
+      "projectName": "TechAdv.Application",
+      "projectPath": "/home/alan-carlos-pereira/Documentos/aulaDotNet/atvAula/TechAdv.Application/TechAdv.Application.csproj",
+      "packagesPath": "/home/alan-carlos-pereira/.nuget/packages/",
+      "outputPath": "/home/alan-carlos-pereira/Documentos/aulaDotNet/atvAula/TechAdv.Application/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/alan-carlos-pereira/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/home/alan-carlos-pereira/Documentos/aulaDotNet/atvAula/TechAdv.Core/TechAdv.Core.csproj": {
+              "projectPath": "/home/alan-carlos-pereira/Documentos/aulaDotNet/atvAula/TechAdv.Core/TechAdv.Core.csproj"
+            },
+            "/home/alan-carlos-pereira/Documentos/aulaDotNet/atvAula/TechAdv.Infrastructure/TechAdv.Infrastructure.csproj": {
+              "projectPath": "/home/alan-carlos-pereira/Documentos/aulaDotNet/atvAula/TechAdv.Infrastructure/TechAdv.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.115/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
